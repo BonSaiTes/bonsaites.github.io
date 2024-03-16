@@ -1,0 +1,22 @@
+{
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "[jekyll]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "smart"
+  },
+  "files.associations": {
+    "*.md": "jekyll",
+    "*.markdown": "jekyll",
+    "*.html": "jekyll",
+    "*.liquid": "jekyll"
+  },
+}

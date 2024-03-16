@@ -1,0 +1,87 @@
+---
+layout: default
+title: 'Bonsaites: as soluções mais rápidas e baratas para o seu negócio'
+features:
+  - j9-esportes
+  - solucione-maquinas
+---
+
+<style>
+  .section-presentation {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--yellow-1);
+    color: var(--black);
+  }
+
+  @media (min-width: 768px) {
+    .section-presentation .wrapper {
+      padding-top: var(--spacing);
+      padding-bottom: var(--spacing);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .section-presentation__title,
+  .section-presentation__description {
+    text-wrap: balance;
+    max-width: 40rem;
+  }
+
+  .section-presentation__title {
+    font-size: clamp(1.6rem, 8vw, 3rem);
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-presentation__description {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+</style>
+
+<section class="section-presentation">
+  <article class="section-presentation__content wrapper">
+    <h2 class="section-presentation__title">
+      Divulgue seu negócio rápido e barato
+    </h2>
+    <p class="section-presentation__description">
+      Geramos a página de divulgação do seu negócio no mesmo dia. Basta enviar a
+      foto e os dados da empresa.
+    </p>
+    <p>
+      <a href="#contato" class="btn">Quero divulgar a minha empresa</a>
+    </p>
+  </article>
+</section>
+
+<section class="section-features">
+  <header class="wrapper">
+    <h2>Em destaque</h2>
+  </header>
+
+  <div class="wrapper horizontal">
+    {% for slug in page.features %}
+    <div>
+      {% for p in site.landing_pages %}{% if p.slug == slug %}
+      <h3>
+        <a href="{{ p.url }}">{{ p.title }}</a>
+      </h3>
+      {% endif %}{% endfor %}
+    </div>
+    {% endfor %}{% if page.features.size < 3 %}
+    <div>
+      <h3>Anuncie aqui</h3>
+      <p>
+        <a href="#contato" class="btn">Quero anunciar</a>
+      </p>
+    </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<style>
+  .landing-page__logo {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<article class="page-content landing-page">
+  {% if page.banner.url %}
+  <div class="landing-page__banner">
+    <img
+      src="{{ site.baseurl }}/{{ page.banner.url }}"
+      width="100%"
+      alt="{{ page.banner.alt }}"
+    />
+  </div>
+  {% endif %} {%- capture header_style -%}{%- if page.banner.url -%} margin-top:
+  -44px; {%- else -%} margin-top: var(--spacing); {%- endif -%}{%- endcapture
+  -%}
+
+  <header
+    class="landing-page__header wrapper horizontal gap-3 align-center"
+    style="{{ header_style }}"
+  >
+    <div class="landing-page__logo">
+      <img
+        src="{{ site.baseurl }}/{{ page.logo }}"
+        width="160"
+        alt="Logo: {{ page.title }}"
+      />
+    </div>
+    <div class="flex">
+      {%- capture badge_style -%} {%- if page.color.bg -%} background-color:
+      {{page.color.bg}}; {%- endif -%} {%- if page.color.text -%} color:
+      {{page.color.text}}; {%- endif -%} {%- endcapture -%}
+
+      <p class="landing-page__categories m-0 horizontal gap-1">
+        {% for category in page.categories %}
+        <span
+          class="landing-page__categories-item badge"
+          style="{{ badge_style }}"
+        >
+          {{ category }}
+        </span>
+        {% endfor %}
+      </p>
+      <h1 class="landing-page__title m-0">{{ page.title }}</h1>
+      <p class="landing-page__description m-0">{{ page.description }}</p>
+    </div>
+  </header>
+
+  <div class="post-content">{{ content }}</div>
+
+  <footer class="landing-page__footer">
+    <div class="wrapper">
+      <div class="landing-page__footer-content">
+        <p><strong>Endereço:</strong> {{ page.address }}</p>
+        <p><strong>Email:</strong> {{ page.email }}</p>
+        <p>
+          <strong>Telefone:</strong>
+          <a href="tel:{{ page.phone.number }}">{{ page.phone.label }}</a>
+        </p>
+        <p>
+          <strong>Whatsapp:</strong>
+          <a href="https://wa.me/{{ page.whatsapp.number }}"
+            >{{ page.whatsapp.label }}</a
+          >
+        </p>
+        <p>
+          <strong>Facebook:</strong>
+          <a href="{{ page.facebook }}">{{ page.facebook }}</a>
+        </p>
+        <p>
+          <strong>Instagram:</strong>
+          <a href="{{ page.instagram }}">{{ page.instagram }}</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
