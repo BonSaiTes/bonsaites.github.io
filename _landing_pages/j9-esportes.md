@@ -20,4 +20,9 @@ banner:
 color:
   bg: '#ffcc28'
   text: '#000'
+cta:
+  url: https://www.instagram.com/j9esportes
+  label: Compre agora
+  description: Acesse nosso Instagram
+  background: img/landing_pages/j9-esportes-cta-bg.jpg
 ---

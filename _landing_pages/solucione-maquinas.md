@@ -17,4 +17,8 @@ logo: img/landing_pages/solucione-maquinas-logo.png
 banner:
   url:
   alt:
+cta:
+  description: Conheça mais, acompanhe promoções e entre em contato.
+  url: https://www.instagram.com/solucionemaquinas
+  label: Siga no Instagram
 ---
