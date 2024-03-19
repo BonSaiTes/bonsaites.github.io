@@ -13,9 +13,9 @@ whatsapp:
   label:
 facebook: https://www.facebook.com/J9Esportes
 instagram: https://www.instagram.com/j9esportes
-logo: img/landing_pages/j9-esportes-logo.png
+logo: assets/landing_pages/j9-esportes-logo.png
 banner:
-  url: img/landing_pages/j9-esportes-banner.jpg
+  url: assets/landing_pages/j9-esportes-banner.jpg
   alt:
 color:
   bg: '#ffcc28'
@@ -24,5 +24,5 @@ cta:
   url: https://www.instagram.com/j9esportes
   label: Compre agora
   description: Acesse nosso Instagram
-  background: img/landing_pages/j9-esportes-cta-bg.jpg
+  background: assets/landing_pages/j9-esportes-cta-bg.jpg
 ---
