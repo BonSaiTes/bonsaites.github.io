@@ -61,23 +61,34 @@ features:
   </article>
 </section>
 
-<section class="section-features">
+<section class="section-features my-3">
   <header class="wrapper">
     <h2>Em destaque</h2>
   </header>
 
-  <div class="wrapper horizontal">
+  <div class="wrapper horizontal gap-3">
     {% for slug in page.features %}
-    <div>
+    <div class="flex bg-grey-100 p-3" style="flex-basis: 30%">
       {% for p in site.landing_pages %}{% if p.slug == slug %}
+      <div>
+        <img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.title }}" />
+      </div>
       <h3>
         <a href="{{ p.url }}">{{ p.title }}</a>
       </h3>
+      <p>{{ p.description }}</p>
       {% endif %}{% endfor %}
     </div>
     {% endfor %}{% if page.features.size < 3 %}
-    <div>
-      <h3>Anuncie aqui</h3>
+    <div
+      class="flex vertical center bg-blue-3 color-white p-3"
+      style="flex-basis: 30%"
+    >
+      <h3>Anuncie a sua empresa</h3>
+      <p>
+        Crie seu primeiro conteúdo online para alcançar milhares de novos
+        clientes.
+      </p>
       <p>
         <a href="#contato" class="btn">Quero anunciar</a>
       </p>
