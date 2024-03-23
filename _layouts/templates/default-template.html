@@ -18,7 +18,7 @@ endcapture -%}
   </div>
   {% endif %}
 
-  <header class="wrapper horizontal gap-3 align-center">
+  <header class="wrapper horizontal gap-3 align-center my-1 lh-1">
     <div class="landing-page__logo">
       <img
         src="{{ site.baseurl }}/{{ page.logo }}"
@@ -40,7 +40,7 @@ endcapture -%}
         </small>
         {% endfor %}
       </p>
-      <h1 class="landing-page__title m-0">{{ page.title }}</h1>
+      <h1 class="landing-page__title my-1">{{ page.title }}</h1>
       <p class="landing-page__description m-0">{{ page.description }}</p>
     </div>
   </header>
@@ -51,7 +51,7 @@ endcapture -%}
   page.cta.background -%}background-image: url('{{ site.baseurl }}/{{
   page.cta.background }}'); background-size: cover; background-position:
   center;{%- endif -%}{%- endcapture -%}
-  <div class="landing-page__cta wrapper my-5">
+  <div class="landing-page__cta wrapper my-3">
     <div
       class="horizontal align-center gap-3 wrap p-5"
       style="background-color: var(--theme-bg-color); text-wrap: balance; {{ cta_background }}"
