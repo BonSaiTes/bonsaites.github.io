@@ -10,6 +10,7 @@ phone:
   label:
 whatsapp:
   number: 5591981667412
+  text: 'Olá! Gostaria de fazer a inscrição da palestra Equilíbrio Emocional: O Pilar do Sucesso no Empreendedorismo.'
   label: (91) 98166-7412
 facebook:
 instagram: https://www.instagram.com/guiasaudebeleza/

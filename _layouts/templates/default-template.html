@@ -98,9 +98,12 @@ endcapture -%}
         </p>
 
         <div class="horizontal center gap-3">
-          {%- if page.whatsapp.number -%}
+          {%- if page.whatsapp.number -%} {%- capture wa_link
+          -%}https://wa.me/{{ page.whatsapp.number }}{%- if page.whatsapp.text
+          -%}?text={{page.whatsapp.text | uri_escape}}{%- endif -%}{%-
+          endcapture -%}
           <p>
-            <a href="https://wa.me/{{ page.whatsapp.number }}" target="_blank">
+            <a href="{{wa_link}}" target="_blank">
               {%- include svg/whatsapp.svg -%}
             </a>
           </p>
