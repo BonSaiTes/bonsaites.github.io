@@ -31,14 +31,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .wrap {
+  .sm-vertical {
     flex-direction: column;
-  }
-}
-
-@media (min-width: 600px) {
-  .reverse {
-    flex-direction: row-reverse;
   }
 }
 

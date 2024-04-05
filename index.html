@@ -4,6 +4,7 @@ title: 'Bonsaites: as soluções mais rápidas e baratas para o seu negócio'
 features:
   - j9-esportes
   - solucione-maquinas
+  - guiasaudebeleza-equilibrio-emocional-o-pilar-do-sucesso-no-empreendedorismo
 ---
 
 <style>
@@ -71,7 +72,9 @@ features:
     <div class="flex bg-grey-100 p-3" style="flex-basis: 30%">
       {% for p in site.landing_pages %}{% if p.slug == slug %}
       <div>
-        <img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.title }}" />
+        <a href="{{ p.url }}">
+          <img src="{{ site.baseurl }}/{{ p.logo }}" alt="{{ p.title }}" />
+        </a>
       </div>
       <h3>
         <a href="{{ p.url }}">{{ p.title }}</a>
