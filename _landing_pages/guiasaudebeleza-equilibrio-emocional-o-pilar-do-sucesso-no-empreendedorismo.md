@@ -65,6 +65,13 @@ A Inteligência Emocional é fundamental para gerenciar seus próprios sentiment
     </div>
   </div>
 
+  <label hidden>
+    <small>
+      Seres humanos não deveriam ver isso. Deixe este campo em branco.
+    </small>
+    <input type="text" name="honeypot" />
+  </label>
+
   <div class="horizontal end">
     <button>Enviar inscrição</button>
   </div>
