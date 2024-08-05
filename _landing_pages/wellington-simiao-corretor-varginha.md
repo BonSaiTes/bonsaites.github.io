@@ -33,10 +33,6 @@ cta:
 
 Entre em contato agora e escolha a sua unidade com exclusividade.
 
-{% comment %}
-Direcionar para: ishidaet03@gmail.com a/c Wellington Simião corretor
-{% endcomment %}
-
 <form action="//server.bonsaites.com.br/contato_wellington_simiao_corretor_varginha.php" method="post" class="vertical gap-2">
   <h2>Tire suas dúvidas com o Especialista:</h2>
 
